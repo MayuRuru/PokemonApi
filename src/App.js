@@ -1,13 +1,8 @@
 import "./App.css";
-import { CardGrid } from "./components/CardGrid";
+import Gallery from "./pages/Galley";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>POKEMON LIST</h1>
-      <CardGrid />
-    </div>
-  );
+  return <Gallery />;
 }
 
 export default App;
