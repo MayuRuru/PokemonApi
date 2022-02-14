@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 export const CardGrid = () => {
   const [pokes, setPokes] = useState([]);
+
   useEffect(() => {
     getAllPoke().then((response) => setPokes(response));
   }, []);
