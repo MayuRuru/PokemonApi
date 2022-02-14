@@ -8,16 +8,14 @@ export const CardGrid = () => {
   const [pokes, setPokes] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("https://pokeapi.co/api/v2/pokemon/1/")
-      .then((response) => setPokes(response.data));
+    axios.get("https://pokeapi.co/api/v2/pokemon").then((res) => {
+      setPokes(res.data.result.map((poke) => poke.name));
+    });
   }, []);
 
   return (
     <section>
-      {pokes.data.forEach((poke) => (
-        <Card poke={pokes} key={poke.id} image={poke.url} />
-      ))}
+      <Card poke={pokes} />
     </section>
   );
 };
@@ -26,5 +24,9 @@ export const CardGrid = () => {
  useEffect(() => {
     getAllPoke().then((response) => setPokes(response));
   }, [setPokes]);
+
+{pokes.forEach((poke) => (
+        <Card poke={pokes} key={poke.id} image={poke.url} />
+      ))}
 
 */

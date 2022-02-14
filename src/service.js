@@ -1,4 +1,4 @@
-import apiServer from "./globalapi";
+import apiServer from "./Globalapi";
 import axios from "axios";
 
 export async function getAllPoke() {
