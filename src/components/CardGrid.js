@@ -19,14 +19,3 @@ export const CardGrid = () => {
     </section>
   );
 };
-
-/*
- useEffect(() => {
-    getAllPoke().then((response) => setPokes(response));
-  }, [setPokes]);
-
-{pokes.forEach((poke) => (
-        <Card poke={pokes} key={poke.id} image={poke.url} />
-      ))}
-
-*/
