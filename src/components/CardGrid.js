@@ -2,13 +2,15 @@ import { Card } from "./Card";
 //import { getAllPoke } from "../service";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { apiService } from "../Globalapi";
+//import { apiService } from "../Globalapi";
 
 export const CardGrid = () => {
   const [pokes, setPokes] = useState([]);
 
   useEffect(() => {
-    axios({ apiService }).then((response) => setPokes(response.data));
+    axios({ url: "https://pokeapi.co/api/v2/pokemon" }).then((response) =>
+      setPokes(response.data)
+    );
   }, [setPokes]);
 
   return (

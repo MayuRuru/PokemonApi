@@ -1,3 +1,3 @@
-const apiServer = "https://pokeapi.co/api/v2/";
+const apiServer = "https://pokeapi.co/api/v2/pokemon";
 
 export default apiServer;
