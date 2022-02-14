@@ -9,11 +9,13 @@ export const CardGrid = () => {
     getAllPoke().then((response) => setPokes(response));
   }, []);
 
-  return (
+  return console.log(response);
+  /*
     <ul>
       {pokes.map((poke) => (
         <Card poke={poke} key={poke.id} image={poke.url} />
       ))}
     </ul>
-  );
+    
+  );*/
 };
