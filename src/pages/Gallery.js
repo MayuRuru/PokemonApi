@@ -1,15 +1,6 @@
-import { CardGrid } from "../components/CardGrid";
-//import { getAllPoke } from "../service";
-//import { useState, useEffect } from "react";
+//import { CardGrid } from "../components/CardGrid";
 
 function Gallery() {
-  /*
-  const [pokes, setPokes] = useState([]);
-  useEffect(() => {
-    getAllPoke().then((response) => setPokes(response));
-  }, []);
-  */
-
   return (
     <div>
       <h1>POKEMON LIST</h1>
