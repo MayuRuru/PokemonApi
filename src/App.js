@@ -1,8 +1,12 @@
-import "./App.css";
-import Gallery from "./pages/Gallery";
+import react from "react";
+import PokemonList from "./pages/PokemonList";
+import {useState} from react;
 
 function App() {
-  return <Gallery />;
+
+  const [pokemon, setPokemon] = useState([])
+
+  return <PokemonList pokemon={pokemon}/>;
 }
 
 export default App;
