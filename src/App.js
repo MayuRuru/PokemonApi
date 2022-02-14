@@ -18,6 +18,7 @@ function App() {
     axios.get("https://pokeapi.co/api/v2/pokemon").then((res) => {
       setPokemon(res.data.results.map((poke) => poke.name));
       setNextPage(res.data.next);
+      console.log(res.data.next);
       setPreviousPage(res.data.previous);
     });
   }, [actualPage]);
