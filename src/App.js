@@ -25,6 +25,7 @@ function App() {
   function goNext() {
     setActualPage(nextPage);
   }
+
   function goPrevious() {
     setActualPage(previousPage);
   }
@@ -35,7 +36,8 @@ function App() {
   <PokemonList pokemon={pokemon} />
   <PassPage 
   goNext={goNext} 
-  goPrevious={goPrevious} />
+  goPrevious={goPrevious} 
+  />
   );
 }
 
