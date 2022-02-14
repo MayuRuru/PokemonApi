@@ -10,12 +10,12 @@ export const CardGrid = () => {
   useEffect(() => {
     axios
       .get("https://pokeapi.co/api/v2/pokemon/1/")
-      .then((response) => console.log(response));
+      .then((response) => setPokes(response.data));
   }, []);
 
   return (
     <section>
-      {pokes.forEach((poke) => (
+      {pokes.data.forEach((poke) => (
         <Card poke={pokes} key={poke.id} image={poke.url} />
       ))}
     </section>
