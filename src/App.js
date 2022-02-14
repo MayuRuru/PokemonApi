@@ -33,11 +33,13 @@ function App() {
   if (loading) return "Loading...";
 
   return (
-  <PokemonList pokemon={pokemon} />
-  <PassPage 
-  goNext={goNext} 
-  goPrevious={goPrevious} 
-  />
+    <>
+      <PokemonList pokemon={pokemon} />
+      <PassPage
+        goNext={goNext ? goNext : null}
+        goPrevious={goPrevious ? goPrevious : null}
+      />
+    </>
   );
 }
 
