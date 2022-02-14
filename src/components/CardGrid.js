@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from "react";
-import { getAllPoke } from "../service";
 import { Card } from "./Card";
 
 export const CardGrid = (props) => {
