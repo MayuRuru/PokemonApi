@@ -14,8 +14,7 @@ export function Card(props) {
 
   return (
     <div>
-      <h1>{props.poke.name}</h1>
-      <img src={pokeImg} />
+      <img src={pokeImg} alt={pokeImg.name} />
     </div>
   );
 }

@@ -4,7 +4,6 @@ import { getAllPoke } from "../api/ApiService";
 
 export const CardGrid = () => {
   const [pokes, setPokes] = useState([]);
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -18,7 +17,7 @@ export const CardGrid = () => {
   return (
     <section>
       {pokes.map((poke) => (
-        <Card pokes={pokes} key={poke.index} />
+        <Card poke={poke} key={poke.index} />
       ))}
     </section>
   );
