@@ -12,12 +12,17 @@ export const CardGrid = () => {
     getAllPoke().then((res) => setPokes(res.results));
   }, []);
 
-  if (loading) return "Loading...";
+  if (loading)
+    return (
+      <section>
+        <p>Loading...</p>
+      </section>
+    );
 
   return (
     <section>
       {pokes.map((poke) => (
-        <Card poke={poke} key={poke.index} />
+        <Card pokes={poke} key={poke.index} />
       ))}
     </section>
   );
