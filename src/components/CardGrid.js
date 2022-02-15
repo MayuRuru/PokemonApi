@@ -1,21 +1,19 @@
 import { Card } from "./Card";
-//import { getAllPoke } from "../service";
 import { useState, useEffect } from "react";
-import axios from "axios";
-//import { apiService } from "../Globalapi";
+import { getAllPoke } from "../api/ApiService";
 
 export const CardGrid = () => {
   const [pokes, setPokes] = useState([]);
 
   useEffect(() => {
-    axios.get("https://pokeapi.co/api/v2/pokemon").then((res) => {
-      setPokes(res.data.result.map((poke) => poke.name));
-    });
+    getAllPoke().then((res) => setPokes(res.results));
   }, []);
 
   return (
     <section>
-      <Card poke={pokes} />
+      {pokes.map((poke) => (
+        <Card poke={poke} key={poke.index} />
+      ))}
     </section>
   );
 };
