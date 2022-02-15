@@ -2,7 +2,7 @@ import globalApi from "./Global";
 import axios from "axios";
 
 export async function getAllPoke() {
-  return axios.get(globalApi).then((res) => res.data);
+  return axios.get(globalApi).then((res) => res.results);
 }
 console.log(res);
 
