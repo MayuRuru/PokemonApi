@@ -11,7 +11,7 @@ export default function PassPage({ previousPage, nextPage, setActualPage }) {
   }
 
   return (
-    <div>
+    <div className="actions">
       <button onClick={previousPage ? goPrevious : null}>Previous</button>
       <button onClick={nextPage ? goNext : null}>Next</button>
     </div>
