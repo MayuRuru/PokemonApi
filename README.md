@@ -1,6 +1,6 @@
 ## Simple challenge emulating a technical test
 
-The goal was to create a JS app that consumes the [Pokemon Api] (https://pokeapi.co/api/v2/pokemon) and showcases a list of pokemon.
+The goal was to create a JS app that consumes the [Pokemon Api](https://pokeapi.co/api/v2/pokemon) and showcases a list of pokemon.
 
 ### Requitistes:
 * Elements of list must show name and image of the pokemon.
