@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: orangered;
+  background-image: linear-gradient(orangered, orange);
   margin: 0;
   font-family: Pokemon-Hollow;
 }
@@ -67,5 +67,23 @@ body {
 
 .actions {
   margin-top: 1rem;
-  text-align: right;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.actions button {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  cursor: pointer;
+  background-color: rgb(169, 226, 36);
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #199e14;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #04570b;
+  border-color: #0f4b08;
 }
