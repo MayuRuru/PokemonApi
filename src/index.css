@@ -50,7 +50,7 @@ body {
   margin-bottom: 0;
 }
 
-@keyframes bounce {
+/* @keyframes bounce {
   20% {
     transform: translateY(-6px);
   }
@@ -63,4 +63,9 @@ body {
   80% {
     transform: translateY(-0px);
   }
+} */
+
+.actions {
+  margin-top: 1rem;
+  text-align: right;
 }
