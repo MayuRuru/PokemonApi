@@ -19,16 +19,18 @@ export const CardGrid = () => {
     );
 
   return (
-    <section>
+    <>
       <PassPage
         nextPage={nextPage}
         previousPage={previousPage}
         setActualPage={setActualPage}
       />
-      {pokes.map((poke) => (
-        <Card pokes={poke} key={poke.name} />
-      ))}
-    </section>
+      <ul className="grid">
+        {pokes.map((poke) => (
+          <Card pokes={poke} key={poke.name} />
+        ))}
+      </ul>
+    </>
   );
 };
 
