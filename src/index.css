@@ -25,6 +25,7 @@ body {
   align-items: center;
   flex-direction: column;
   font-family: Pokemon-Solid;
+  font-size: 4em;
 }
 
 .grid {
@@ -32,6 +33,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1em;
+  padding: 1em;
+  margin: 0 auto;
 }
 
 .card {
@@ -45,4 +48,19 @@ body {
   text-transform: uppercase;
   font-weight: normal;
   margin-bottom: 0;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(-0px);
+  }
 }
