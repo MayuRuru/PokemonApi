@@ -9,9 +9,3 @@ export async function getPokeDetail(url) {
     return res.data;
   });
 }
-
-/*
-export async function getPokeById(id) {
-  return axios.get(globalApi + id).then((response) => response.data);
-}
-*/

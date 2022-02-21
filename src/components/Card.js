@@ -1,4 +1,3 @@
-import axios from "axios";
 import { useState, useEffect } from "react";
 import { getPokeDetail } from "../api/ApiService";
 
@@ -17,8 +16,8 @@ export function Card(props) {
 
   return (
     <div>
-      <h1>{pokeName}</h1>
-      <img src={pokeImg} alt={pokeName} />
+      <h1 className="card-name">{pokeName}</h1>
+      <img className="card-img" src={pokeImg} alt={pokeName} />
     </div>
   );
 }
