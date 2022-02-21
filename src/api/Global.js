@@ -1,3 +1,3 @@
-const globalApi = "https://pokeapi.co/api/v2/pokemon";
+const FIRST_PAGE = "https://pokeapi.co/api/v2/pokemon";
 
-export default globalApi;
+export default FIRST_PAGE;

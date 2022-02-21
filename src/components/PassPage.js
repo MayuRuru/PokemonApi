@@ -1,36 +1,19 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
-import globalApi from "../api/Global";
-
-export default function PassPage() {
-  //const [loading, setLoading] = useState(true);
-
-  const [actualPage, setActualPage] = useState(globalApi);
-  const [nextPage, setNextPage] = useState();
-  const [previousPage, setPreviousPage] = useState();
-
-  useEffect(() => {
-    //setLoading(false);
-    axios.get(globalApi).then((res) => {
-      setNextPage(res.data.next);
-      setPreviousPage(res.data.previous);
-    });
-  }, [actualPage]);
-
+export default function PassPage({ previousPage, nextPage, setActualPage }) {
   function goNext() {
+    console.log("NEXT", nextPage);
+
     setActualPage(nextPage);
   }
 
   function goPrevious() {
+    console.log("PREVIOUS", previousPage);
     setActualPage(previousPage);
   }
 
-  //if (loading) return "Loading...";
-
   return (
     <div>
-      <button onClick={goPrevious ? goPrevious : null}>Previous</button>
-      <button onClick={goNext ? goNext : null}>Next</button>
+      <button onClick={previousPage ? goPrevious : null}>Previous</button>
+      <button onClick={nextPage ? goNext : null}>Next</button>
     </div>
   );
 }

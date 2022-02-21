@@ -1,8 +1,13 @@
-import globalApi from "./Global";
 import axios from "axios";
 
-export async function getAllPoke() {
-  return axios.get(globalApi).then((res) => res.results);
+export async function getAllPoke(url) {
+  return axios.get(url).then((res) => res.data);
+}
+
+export async function getPokeDetail(url) {
+  return axios.get(url).then((res) => {
+    return res.data;
+  });
 }
 
 /*
