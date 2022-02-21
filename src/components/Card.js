@@ -15,7 +15,7 @@ export function Card(props) {
   }, [props]);
 
   return (
-    <div>
+    <div className="card">
       <h1 className="card-name">{pokeName}</h1>
       <img className="card-img" src={pokeImg} alt={pokeName} />
     </div>

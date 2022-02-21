@@ -10,13 +10,19 @@
 body {
   background-color: orangered;
   margin: 0;
-  font-family: Poke;
+  font-family: Pokemon-Hollow;
 }
 
 .card {
-  background-color: darkslategray;
+  background-color: gray;
+  padding: 2vh;
+  color: #222;
 }
 
-.h1 {
-  font-family: Pokemon-Hollow;
+.title {
+  margin-top: 3%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
