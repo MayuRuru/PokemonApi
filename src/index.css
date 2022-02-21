@@ -39,7 +39,7 @@ body {
 
 .card {
   background-color: antiquewhite;
-  padding: 2vh;
+  padding: 1em;
   color: #222;
   text-align: center;
 }
@@ -69,7 +69,7 @@ body {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 2em;
 }
 
 .actions button {
