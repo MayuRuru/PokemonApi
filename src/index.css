@@ -8,10 +8,6 @@
   src: url(../src/fonts/Pokemon-Solid.ttf);
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   background-image: linear-gradient(orangered, orange);
   margin: 0;
@@ -39,7 +35,7 @@ body {
 
 .card {
   background-color: antiquewhite;
-  padding: 1em;
+  padding: 1rem;
   color: #222;
   text-align: center;
 }
@@ -69,17 +65,17 @@ body {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
-  margin: 2em;
 }
 
 .actions button {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   cursor: pointer;
   background-color: rgb(169, 226, 36);
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 2rem;
   border: 1px solid #199e14;
   border-radius: 4px;
   font-weight: bold;
+  margin: auto;
 }
 
 .actions button:hover,
