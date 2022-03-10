@@ -10,7 +10,7 @@
 
 **Other features**😜 
 * I added buttons to navigate to previous or next grids if available.
-* I refactored with a customized hook for anatomic design.
+* I refactored with a **customized hook** for atomic design.
 * I created a local variable for using the API endpoint.
 * Plus, decided to show different provided front or back images wether they are female or male pokemons.
 
